@@ -112,7 +112,45 @@
     color: #9c9a9a;
 }
 
-footer {
+.statsContainer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.statsButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.statsButton:hover {
+    background-color: #0056b3;
+}
+
+#statsCounter {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.aboutSection{
+    padding: 0 30rem;
+}
+
+.aboutmeTittle{
+    text-align: center;
+}
+
+.personalIcon{
+    width: 60%;
+    margin-left: 20%;
+    padding: 2rem 0;
+}
+
+.footer {
     background-color: #191919;
     padding-top: 2rem;
     color: #a0a0a0;
@@ -121,10 +159,11 @@ footer {
 
 .formSection {
     display: flex;
-    flex-direction: column; /* Coloca los elementos uno encima del otro */
-    align-items: center; /* Centra los elementos en el eje transversal */
-    max-width: 500px; /* Limita el ancho máximo del formulario */
-    margin: 0 auto; /* Centra el formulario dentro del footer */
+    flex-direction: column; 
+    align-items: center; 
+    max-width: 500px; 
+    margin: 0 auto; 
+    padding-top: 5rem;
 }
 
 .formTittle{
@@ -179,6 +218,12 @@ textarea::placeholder {
     border: 1px solid #ccc;
     background-color: #333;
     margin-bottom: 1rem;
+}
+
+.feedbackMessage {
+    color: green;
+    font-size: 16px;
+    margin-top: 10px;
 }
 
 .navFooter{

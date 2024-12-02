@@ -17,15 +17,15 @@
         <img class="headerImg" src="images/page/comfort-virtual-space-logo.svg" alt="Logo representativo de la pagina">
         <nav class="nav">
             <ul class="navList">
-                <li class="navItem"><a href="">Home</a></li>
-                <li class="navItem"><a href="">About me</a></li>
-                <li class="navItem"><a href="">Contact</a></li>
+                <li class="navItem"><a href="#home">Home</a></li>
+                <li class="navItem"><a href="#aboutMe">About me</a></li>
+                <li class="navItem"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="main">
-        <section class="postsSection">
+        <section class="postsSection" id="home">
             <article class="post">
                 <img class="imagePost" src="images/posts/ciberseguridad.jpg" alt="">
                 <h3 class="tittlePost">Are you safe?</h3>
@@ -67,25 +67,38 @@
                 <span class="datePost">22/8/24</span>
                 <span class="descriptionPost">Learn the technologies most used by professionals and most requested by large companies by 2025.</span>
             </article>
+            <div class="statsContainer">
+                <button id="viewStatsButton" class="statsButton">View stats</button>
+                <p id="statsCounter">Visits: 0</p>
+            </div>
         </section>
 
 
-        <section class="aboutSection"></section>
-        <section class="contactSection"></section>
+        <section class="aboutSection" id="aboutMe">
+            <h2 class="aboutmeTittle">About me</h2>
+            <img class="personalIcon" src="images/icons/logo.jpeg" alt="personal icon">
+            <span class="aboutmeText"> I am currently a student of systems engineering and computer, 
+                in my free time I like to study new technologies to apply them to my university work or personal projects, 
+                I am a person who is easy to adapt to the environments to which I am part, trying to contribute and bring the same pace of others.</span>
+        </section>
     </main>
 
     <footer>
-        <section class="formSection">
+        <section class="formSection" id="contact">
             <h2 class="formTittle">Give us your Feedback</h2>
-            <form class="form" action="">
+            <form class="form" id="feedbackForm">
                 <label class="formLabel" for="name">Name</label>
-                <input class="formInput" id="name" type="text" placeholder="Cognitus. . .">
+                <input class="formInput" id="name" type="text" placeholder="Cognitus..." required>
+                
                 <label class="formLabel" for="email">Email</label>
-                <input class="formInput" id="email" type="email" placeholder="Example@example.com">
+                <input class="formInput" id="email" type="email" placeholder="Example@example.com" required>
+                
                 <label class="formLabel" for="text">Feedback</label>
-                <textarea name="text" id="text" placeholder="What do you think about this page?"></textarea>
+                <textarea name="text" id="text" placeholder="What do you think about this page?" required></textarea>
+                
                 <button class="formButton" type="submit">Send</button>
             </form>
+            <p id="feedbackMessage" class="feedbackMessage" style="display: none;">Feedback sent.</p>
         </section>
 
         <nav class="navFooter">
@@ -98,5 +111,6 @@
             </ul>
         </nav>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
