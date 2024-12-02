@@ -1,0 +1,206 @@
+.page{
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+    background-color: #191919;
+    color: #a0a0a0;
+
+}
+
+
+.header{
+    display: flex;
+    width: 100%;
+    background-color: #191919;
+    justify-content: space-between;
+    font-size: 1.5em;
+    font-family: "Yuji Mai", serif;;
+    color: #a0a0a0;
+    padding: 0 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+.tiitle{
+    font-weight: normal
+}
+
+.headerImg{
+    width: 5rem;
+}
+
+.navList{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.navItem{
+    padding: 0 1rem;
+    position: relative;
+    color: #a0a0a0;
+    cursor: pointer;
+}
+
+.navItem:hover{
+    color: #e9e9e9;
+    transition: ease-in-out .2s;
+}
+
+.navItem::after {
+    content: "";
+    position: absolute;
+    bottom: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 0%;
+    height: 2px;
+    background-color: #ececec;
+    transition: width 0.3s ease-in-out;
+}
+
+.navItem:hover::after {
+    width: 60%; 
+}
+
+.postsSection{
+    padding-left: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr); 
+    gap: 2rem; 
+    margin: 2rem; 
+}
+
+
+.post {
+    height: 40vh;
+    width: 55vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #202020;
+    border-radius: 25px;
+}
+
+.post:hover{
+    scale: 1.05;
+    transition: ease-in-out .2s;
+}
+
+.imagePost {
+    width: 100%; 
+    height: 50%; 
+    object-fit: contain; 
+    object-position: center;
+    backdrop-filter: blur(10px);
+}
+
+.tittlePost{
+    font-weight: bold;
+    font-size: 1.4em;
+    padding-left: .5rem;
+}
+
+.datePost{
+    padding-right: .5rem;
+    color: #504a4a;
+    text-align: end;
+}
+
+.descriptionPost{
+    padding-left: .5rem;
+    color: #9c9a9a;
+}
+
+footer {
+    background-color: #191919;
+    padding-top: 2rem;
+    color: #a0a0a0;
+    text-align: center; 
+}
+
+.formSection {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos uno encima del otro */
+    align-items: center; /* Centra los elementos en el eje transversal */
+    max-width: 500px; /* Limita el ancho máximo del formulario */
+    margin: 0 auto; /* Centra el formulario dentro del footer */
+}
+
+.formTittle{
+    font-size: 2em;
+    font-weight: bold;
+    color: #ececec;
+    margin-bottom: 1.5rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.formLabel{
+    text-align: start;
+}
+
+.formInput {
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #333;
+    color: #ececec;
+    width: 100%;
+    font-size: 1em;
+    margin-bottom: 1rem;
+}
+
+textarea {
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #333;
+    color: #ececec;
+    width: 100%;
+    font-size: 1em;
+    height: 150px;
+    margin-bottom: 1rem;
+}
+
+.footerInput::placeholder,
+textarea::placeholder {
+    color: #9c9c9c;
+}
+
+.formButton{
+    width: 30%;
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #333;
+    margin-bottom: 1rem;
+}
+
+.navFooter{
+    display: flex;
+    justify-content: space-between;
+}
+
+.spanFooter{
+    align-content: end;
+    padding-left: 1rem;
+}
+
+.footerItem{
+    align-content: end;
+}
+
+.footerIcons{
+    display: flex;
+    gap: 1rem;
+    padding-right: 1rem;
+}
+
+.footerIcon{
+    width: 2rem;
+}

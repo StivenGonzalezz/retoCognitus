@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Fondo sólido -->
+  <rect width="200" height="200" fill="#191919"/>
+  
+  <!-- Formas abstractas que representan conexión y confort -->
+  <path d="M50 100 C75 75, 125 75, 150 100 S200 125, 150 150 C125 175, 75 175, 50 150 S0 125, 50 100" 
+        fill="none" stroke="#7a7a7a" stroke-width="4"/>
+  
+  <!-- Elementos internos suaves -->
+  <circle cx="100" cy="100" r="40" fill="#7a7a7a" fill-opacity="0.2"/>
+  
+  <!-- Puntos de conexión -->
+  <circle cx="70" cy="85" r="5" fill="#a0a0a0"/>
+  <circle cx="130" cy="85" r="5" fill="#a0a0a0"/>
+  <circle cx="100" cy="120" r="5" fill="#a0a0a0"/>
+</svg>
